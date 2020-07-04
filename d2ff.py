@@ -41,10 +41,8 @@ def get_io_files():
 def get_parser():
     parser = argparse.ArgumentParser(description='Converts a Dashlane Password Manager JSON Export '
                                                  'into a compatible format for importing passwords into Firefox.')
-    parser.add_argument('-i',
-                        '--input-file',
-                        required=True,
-                        help='The input Dashlane JSON export file to be processed')
+    parser.add_argument('input_file',
+                        help='The input "Dashlane JSON export" file to be processed')
     parser.add_argument('-o',
                         '--output-file',
                         help='The output Firefox CSV import file to be produced')
